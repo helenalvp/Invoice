@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Invoice</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+       <div class="container border my-2">
+            <!-- Header -->
+           <div class="header">
+               <!-- get this to float to the right and have the pront functionality working -->
+                <div class="print-btn mt-3 d-flex justify-content-end">
+                    <button class="btn-dark rounded py-1" onclick="window.print()">Print this page</button>
+                </div>
+                <div class="title-header d-flex justify-content-between">
+                    <!-- center items and space in one row  -->
+                    <div class="img">
+                        <img src="img/IdeaFoundryLogo.png" alt="ideaFoundry.png">
+                    </div>
+                    <div class="client-no align-self-center">
+                        <h5>Client No: 4908</h5>
+                    </div>
+                    
+                </div>
+                <hr/>
+                <div class="details-header  d-flex justify-content-between">
+                    <!--space in one row  -->
+                    <div class="date">
+                        <strong>Date:</strong>
+                        05/12/2019
+                    </div>
+                    <div class="invoice-no">
+                        <strong>Invoice No:</strong>
+                        19005
+                    </div>
+                     
+                </div>
+               <hr/>  
+           </div>
+           <!-- Invoice details and table -->
+           <div class="body">
+               <!-- Addresses for invoice -->
+                <div class="addresses d-flex justify-content-between mb-3">
+                    <!-- space between in same row -->
+                    <!-- Invoice To -->
+                    <div>
+                        <strong>Invoice To:</strong><br>
+                        Mark Davis<br>333 Al Davis Way<br>Las Vegas, NV 89118
+                    </div>
+                    <div>
+                        <strong>Pay To:</strong><br>
+                        Idea Foundry, Irc.<br> 2705 N. Enterprise St.<br>Kernersville, NC 27284
+                    </div>
+                </div>
+
+                <div class="invoice-table">
+                    <table class="table table-striped table-bordered">
+                        <caption class="text-dark">
+                            <strong>NOTE:</strong> This is computer generated recipt and does not require physical signature
+                        </caption>
+                        <thead>
+                          <tr>
+                            <th scope="col">Service</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Rate</th>
+                            <th scope="col">QTY</th>
+                            <th scope="col">Amount</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td scope="row">Design</td>
+                            <td>Website Design</td>
+                            <td>$60.00</td>
+                            <td>10</td>
+                            <td>$600.00</td>
+                          </tr>
+                          <tr>
+                            <td scope="row">Development</td>
+                            <td>Website Design</td>
+                            <td>$150.00</td>
+                            <td>10</td>
+                            <td>$1,500.00</td>
+                          </tr>
+                          <tr>
+                            <td scope="row">Deployment</td>
+                            <td>Deployment and Hosting</td>
+                            <td>$450.00</td>
+                            <td>1</td>
+                            <td>$450.00</td>
+                          </tr>  
+                        </tbody>
+                          <!-- Totals -->
+                          <tfoot>
+                             <tr>
+                            <td scope="row">Sub Total:</td>
+                            <td colspan="3"></td>
+                            <td>$2,550.00</td>
+                          </tr>
+                          <tr class="">
+                            <td scope="row">Tax:</td>
+                            <td colspan="3"></td>
+                            <td>$0.00</td>
+                          </tr>
+                          <tr>
+                            <td scope="row">Total:</td>
+                            <td colspan="3"></td>
+                            <td>$2,550.00</td>
+                          </tr> 
+                          </tfoot>
+                        
+                      </table>
+                </div>
+           </div>
+
+
+       </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
